@@ -1,0 +1,22 @@
+{
+  "name": "codex-stream-recovery",
+  "version": "0.1.0+codex.20260601152410",
+  "description": "Recover interrupted Codex turns by rebuilding continuation context from Codex session files.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Stream Recovery",
+    "shortDescription": "Resume work after Codex stream disconnects.",
+    "longDescription": "Codex Stream Recovery rebuilds a continuation package from local Codex session JSONL files after reconnect exhaustion or stream-disconnected failures. It creates a recovery JSON file and a ready-to-send recovery prompt so work can continue in a new Codex turn without depending on any target repository.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Recovery",
+      "Diagnostics",
+      "Developer Tools"
+    ],
+    "defaultPrompt": "Recover the latest interrupted Codex turn and generate a continuation prompt."
+  }
+}
