@@ -164,6 +164,26 @@ Common diagnostic buckets:
 
 ## Install With Codex Plugin
 
+### Install From GitHub
+
+After this repository is pushed to GitHub, users can add it as a remote marketplace without cloning it manually:
+
+```powershell
+codex plugin marketplace add https://github.com/vinci0007/codex-stream-recovery.git
+codex plugin add codex-stream-recovery@codex-local
+```
+
+Short GitHub syntax is also supported by Codex CLI:
+
+```powershell
+codex plugin marketplace add vinci0007/codex-stream-recovery
+codex plugin add codex-stream-recovery@codex-local
+```
+
+Codex will still cache the installed plugin locally at install time. Users do not need to download or maintain this repository by hand.
+
+### Install From A Local Checkout
+
 This repository includes a local marketplace file at the path expected by Codex:
 
 ```text

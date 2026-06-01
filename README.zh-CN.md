@@ -164,6 +164,26 @@ node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs <path-to-lo
 
 ## 安装为 Codex Plugin
 
+### 从 GitHub 安装
+
+仓库推送到 GitHub 后，用户可以把它作为远程 marketplace 添加，不需要手动 clone 或下载：
+
+```powershell
+codex plugin marketplace add https://github.com/vinci0007/codex-stream-recovery.git
+codex plugin add codex-stream-recovery@codex-local
+```
+
+Codex CLI 也支持短 GitHub 写法：
+
+```powershell
+codex plugin marketplace add vinci0007/codex-stream-recovery
+codex plugin add codex-stream-recovery@codex-local
+```
+
+安装时 Codex 仍会把插件缓存到本机，但用户不需要自己维护本地插件目录。
+
+### 从本地 checkout 安装
+
 这个目录包含 Codex 期望路径下的本地 marketplace 文件：
 
 ```text
