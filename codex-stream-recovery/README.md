@@ -79,13 +79,13 @@ node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs"
 
 ```powershell
 $PLUGIN_ROOT = "<plugin-root>"
-node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --session C:\path\to\rollout.jsonl
+node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --session <path-to-session-jsonl>
 ```
 
 指定输出目录：
 
 ```powershell
-node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --output C:\path\to\recovery
+node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --output <path-to-recovery-dir>
 ```
 
 指定 Codex home：
@@ -144,7 +144,7 @@ node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs"
 扫描指定日志或 session：
 
 ```powershell
-node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs C:\path\to\log-or-session.jsonl
+node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs <path-to-log-or-session-jsonl>
 ```
 
 常见诊断分类：
@@ -252,5 +252,5 @@ node "<plugin-root>\scripts\recover_codex_turn.mjs" --help
 用指定 session 做恢复测试：
 
 ```powershell
-node "<plugin-root>\scripts\recover_codex_turn.mjs" --session C:\path\to\rollout.jsonl --output C:\path\to\test-recovery
+node "<plugin-root>\scripts\recover_codex_turn.mjs" --session <path-to-session-jsonl> --output <path-to-test-recovery-dir>
 ```

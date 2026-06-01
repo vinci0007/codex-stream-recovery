@@ -56,8 +56,8 @@ Useful options:
 ```powershell
 $PLUGIN_ROOT = "<plugin-root>"
 node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --codex-home "$env:USERPROFILE\.codex"
-node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --session C:\path\to\rollout.jsonl
-node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --output C:\path\to\recovery
+node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --session <path-to-session-jsonl>
+node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --output <path-to-recovery-dir>
 node "$PLUGIN_ROOT\scripts\recover_codex_turn.mjs" --tail-events 60 --max-field-chars 10000
 ```
 
@@ -84,8 +84,8 @@ Useful options:
 ```powershell
 $PLUGIN_ROOT = "<plugin-root>"
 node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --codex-home "$env:USERPROFILE\.codex"
-node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs C:\path\to\codex-or-gateway.log
-node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs C:\path\to\logs --trace-id <trace-id>
+node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs <path-to-codex-or-gateway-log>
+node "$PLUGIN_ROOT\scripts\inspect_codex_stream_recovery.mjs" --logs <path-to-logs-dir> --trace-id <trace-id>
 ```
 
 The script reads only tails of text logs. It does not parse project databases, inspect source code, or require repository dependencies.
